@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+body{
+    font-family: "Dela Gothic One", sans-serif;
+    background-color: #22242f;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/*<<<<<<<<<<<<<<<<<<<<Navbar-styling>>>>>>>>>>>>>>>>>>>*/
+.container-nav{
+    padding: 60px 240px 0px;
+}
+.navbar-items{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.nav-items{
+    width: 45%;
+}
+.nav-item{
+    font-size: 22px;
+    font-weight: bold;
+}
+.nav-link:hover{
+    color: #615bdb;
+    transition: 0.5s;
+}
+.nav-line{
+    margin-top: 60px;
+    border: 2px solid #615bdb;
+}
+
+.hamburger{
+    height: 40px;
+    width: 40px;
+    background: none;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 6px;
+    padding: 5px;
+    cursor: pointer;
+}
+.bar,.hamburger::before,.hamburger::after{
+    content: "";
+    display: block;
+    height: 3px;
+    border-radius: 5px;
+    background-color: white;
+    margin: 4px 0px;
+    transition: 0.5s;
+}
+
+.hamburger.is-active{
+    border: none;
+}
+.bar.is-active{
+    opacity: 0;
+}
+.hamburger.is-active.hamburger::before{
+    transform: rotate(45deg) translate(8px,5px);
+}
+.hamburger.is-active.hamburger::after{
+    transform: rotate(-45deg) translate(5px,-2px);
+}
+.block{
+    width: 100%;
+    display: block;
+}
+
+
+/*<<<<<<<<<<<<<<<<<<<<Hero-section-styling>>>>>>>>>>>>>>>>>>>*/
+.hero_section{
+    padding-top: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+.hero__section-left{
+    padding-left:240px;
+    width: 58%;
+    position: relative;
+}
+.hero__left-tagline{
+    color: #ffffff;
+    font-size: 64px;
+    font-weight: 800;
+}
+.tagline-desc{
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 600;
+}
+.below-tagline-hr{
+    border:3px solid #ffaf26;
+    border-radius: 5px;
+    width: 100px;
+    margin: 20px 0px;
+}
+.hero__left-discoverBtn{
+    margin-top: 120px;
+    padding: 22px 30px;
+    color: white;
+    background-color: #635ee2;
+    font-size: 20px;
+    display: inline-block;
+    border-radius: 8px;
+    font-weight: 600;
+}
+/* console.animation */
+.hero__section-right{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+}
+.console{
+    height: 500px;
+    width: 800px;
+}
+#movement-btn{
+    border: 30px solid black;
+}
+.background-illutration{
+    height: 700px;
+    width: 700px;
+    position: absolute;
+    left: -330px;
+    bottom: -351px;
+    z-index: -1;
+}
+
+
+/*<<<<<<<<<<<<<<<<<<<<Partner-section-styling>>>>>>>>>>>>>>>>>>>*/
+.partners_section{
+    padding: 120px 240px;
+}
+.partner_section-title{
+    font-size: 45px;
+    font-weight: 700;
+}
+.partner_title-desc{
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.partner-list{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid white;
+    list-style: none;
+    overflow: hidden;
+    width: 80%;
+    margin: auto;
+    margin-top: 90px;
+}
+.partner-items img{
+    margin: 0px 35px;
+}
+.bk-logo , .hp-logo{
+    height: 160px;
+    width: 160px;
+}
+.benco-logo{
+    height: 170px;
+    width: 270px;
+}
+.enba-logo{
+    height: 120px;
+    width: 270px;
+}
+.gamekit-logo{
+    height: 50px;
+    width: 240px;
+}
+.gamivo-logo{
+    height: 50px;
+    width: 240px;
+}
+.list-container{
+    position: relative;
+}
+.carousel-btn-prev{
+    position: absolute;
+    top: 42%;
+    outline: none;
+    background: none;
+    border: none;
+    left: 30px;
+    cursor: pointer;
+}
+.carousel-btn-next{
+    position: absolute;
+    top: 42%;
+    outline: none;
+    background: none;
+    border: none;
+    right: 30px;
+    cursor: pointer;
+}
+.move-left,.move-right{
+    width: 25px;
+    height: 50px;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Mobile Media Querry>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media(max-width:567px){
+
+     body{
+         text-align: center;
+     }
+
+    /* nav-section */
+    .container-nav {
+        padding: 20px 16px;
+    }
+    .nav-line {
+        margin-top: 15px;
+    }
+    .nav-brand{
+        margin: auto;
+    }
+    .nav-logo{
+        height: 30px;
+        width: 140px;    
+    }
+    .nav-list {
+        flex-direction: column;
+        height: 170px;
+        margin-top: 30px;
+    }  
+    .nav-item {
+        background-color: #2c2f64;
+        font-size: 20px;
+        padding: 5px 0px;
+        border-radius: 5px;
+    }  
+
+    /* hero-section */
+    .hero_section {
+        padding: 16px;
+        padding-top: 15px;
+        display: block;
+        text-align: center;
+    }
+    .hero__section-left {
+        padding-left: 0px;
+        width: 100%;
+    }
+    .hero__left-tagline {
+        font-size: 35px;
+    }
+    .below-tagline-hr {
+        margin: 20px auto;
+    }    
+    .tagline-desc {
+        font-size: 20px;
+    }
+    .hero__left-discoverBtn {
+        padding: 15px 18px;
+        font-size: 18px;
+        margin: auto;
+        margin-top: 50px;
+    }
+    .hero__section-right {
+        width: 100%;
+        display: block;
+        margin-top: 70px;
+    }
+    .background-illutration {
+        height: 300px;
+        width: 300px;
+        left: 70px;
+        bottom: -310px;
+    }
+    .console {
+        height: 250px;
+        width: 100%;
+    }
+
+    /* partner-section */
+    .partners_section {
+        padding: 50px 16px;
+    }
+    .partner_section-title {
+        font-size: 35px;
+    }
+    .partner_title-desc {
+        font-size: 18px;
+    }
+    .partner-list {
+        width: 65%;
+    }
+    .benco-logo {
+        height: 120px;
+        width: 180px;
+    }
+    .bk-logo, .hp-logo {
+        height: 110px;
+        width: 110px;
+    }
+    .enba-logo {
+        height: 110px;
+        width: 180px;
+    }
+    .gamekit-logo {
+        height: 40px;
+        width: 180px;
+    }
+    .gamivo-logo {
+        height: 40px;
+        width: 180px;
+    }
+    
+    
+
+
+
+    .hide{
+        display: none;
+    }
+}

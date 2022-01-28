@@ -1,12 +1,10 @@
 //>>>>>>>>>HAMBURGER MENU ANIMATION>>>>>>>>>>>
 let hamburger = document.querySelector('.hamburger');
-let hambar = document.querySelector('.bar');
-let navlst = document.querySelector('.block');
+let mobNav = document.querySelector('.mobile-nav');
 
 hamburger.addEventListener('click', function () {
     hamburger.classList.toggle('is-active');
-    hambar.classList.toggle('is-acitve');
-    navlst.classList.toggle('block');
+    mobNav.classList.toggle('is-active');
 })
 
 
@@ -39,20 +37,12 @@ let moveNext = document.querySelector('.carousel-btn-next');
 let movePrev = document.querySelector('.carousel-btn-prev');
 let partner = document.querySelector('.partner-list');
 let partnerpng = Array.from(partner.children);
-let sum = 0;
-// let sum_i =
-//width of single logoPng
 let slideWidth = partnerpng[0].getBoundingClientRect().width;
 
-// for (let i = 0; i < 4; i++) {
-//     let sumfour = partnerpng[i].getBoundingClientRect().width;
-//     console.log(sumfour);
-// }
 
+// let partner;
+let width = 0;
 for (let i = 0; i < 4; i++) {
-    let sum = 0;
-    sum = sum + partnerpng[i].getBoundingClientRect().width;
+    width += partnerpng[i].getBoundingClientRect().width;
 }
-
-let sumfour = partnerpng[0].getBoundingClientRect().width + partnerpng[1].getBoundingClientRect().width + partnerpng[2].getBoundingClientRect().width + partnerpng[3].getBoundingClientRect().width;
-console.log(sumfour);
+console.log(width);

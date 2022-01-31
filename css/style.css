@@ -111,15 +111,22 @@ a{
     width: 100px;
     margin: 20px 0px;
 }
-.hero__left-discoverBtn{
+.purple-btn{
     margin-top: 120px;
     padding: 22px 30px;
     color: white;
-    background-color: #635ee2;
+    background-image: linear-gradient(to right, #1a2356 , #5b7bfb);
     font-size: 20px;
     display: inline-block;
     border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+    background-size: 300% 100%;
     font-weight: 600;
+}
+.purple-btn:hover{
+    background-position: 100% 0;
+    background-image: linear-gradient(to left, #1a2356 , #5b7bfb);
+    transition: all 0.5s ease-in-out;
 }
 /* console.animation */
 .hero__section-right{
@@ -254,8 +261,8 @@ a{
     background-position: bottom -20rem right -20rem;
     background-size: 50rem;
 }
-.offer__section-title{
-    font-size: 48px;
+.section-title{
+    font-size: 55px;
     font-weight: 700;
     margin-bottom: 20px;
 }
@@ -270,17 +277,17 @@ a{
    justify-content: space-between;
 }
 .spec__card{
-    padding: 20px;
+    padding: 20px 35px;
     border: 1px solid white;
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
     flex-direction: column;
-    background-color: #505065;
+    background-color: rgb(80, 80, 101);
     border-radius: 8px;
-    margin: 60px 35px 0px;
-    width: 25rem;
+    width: 27rem;
+    margin-top: 60px;
 }
 .spec__card:hover{
     margin-top: 0px;
@@ -299,7 +306,8 @@ a{
     font-weight: 700;
 }
 .spec_desc{
-    font-size: 22px;
+    font-size: 20px;
+    line-height: 30px;
     font-weight: 500;
 }
 .spec__card-hr{
@@ -308,8 +316,187 @@ a{
     border-radius: 6px;
     margin: 20px 0px;
 }
+.margin-center{
+    margin: auto;
+    margin-top: 120px;
+    display: block;
+    width: 18rem;
+}
 
+/*<<<<<<<<<<<<<<<<<<<<PROJECTS-section-styling>>>>>>>>>>>>>>>>>>>*/
+.project__section{
+    padding: 80px 205px;
+    background: url(../img/Illustrations/Mask\ Group\ 1.png) no-repeat;
+    background-position: top -10rem left -30rem;
+    background-size: 50rem;
+}
+.project_card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
+    background-image: linear-gradient(to right, #1a2356 , #5b7bfb);
+    border-radius: 15px;
+    perspective: 1000px;
+}
+.projects_wrapper{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project-dec{
+    width: 40%;
+    transition: all 500ms ease-in;
+    transform-style: preserve-3d;
+}
+.project-title{
+    font-size: 40px;
+    font-weight: 700;
+}
+.project{
+    flex: 0 0 85rem;
+    margin:32px;
+}
+.projects-list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.project_det{
+    margin-top: 30px;
+    font-size: 22px;
+    line-height: 35px;
+    font-weight: 500;
+    transform-style: preserve-3d;
+}
+.project-img{
+    transform-style: preserve-3d;
+    transition: all 500ms ease-in;
+}
+.game-img{
+    transform-style: preserve-3d;
+    height: 20rem;
+    width: 35rem;
+}
+.prev-project,.next-project{
+    height: 45px;
+    width: 35px;
+    background:none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.arrow-icon{
+    height: 45px;
+    width: 30px;
+}
 
+/*<<<<<<<<<<<<<<<<<<<<CONTACT-section-styling>>>>>>>>>>>>>>>>>>>*/
+.querry-contact-section{
+    padding:80px 240px;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-title{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 56px;
+}
+.contact-no,.email{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 45px;
+}
+.links{
+    margin-top: 30px;
+}
+.links img{
+    height: 55px;
+    width: 56px;
+    margin-right: 10px;
+}
+.contact-img{
+    margin-top: 130px;
+}
+.contact{
+    height: 362px;
+    width: 656px;
+}
+.querry-section{
+    background-color: #505065;
+    border-radius: 30px;
+    width: 50%;
+}
+.input-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 75%;
+    margin: 4rem auto;
+}
+#name, #subject, #email-add, #tellus{
+    width: 100%;
+    height:60px;
+    border-radius: 15px;
+    margin-bottom: 36px;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+    padding-left: 10px;
+    background-color:#22242f ;
+}
+::placeholder{
+    color: #f5f5f5;
+}
+#name, #subject, #email-add, #tellus:focus{
+    outline: none;
+}
+#tellus{
+    padding: 10px;
+    font-family: sans-serif;
+    height: 15rem;
+    resize: none;
+}
+.send-message{
+    cursor: pointer;
+    font-size: 18px;
+    background-image: linear-gradient(to right, #1a2356 , #5b7bfb);
+    color: #ffffff;
+    font-weight: 700;
+    height: 3.3rem;
+    width: 13rem;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    margin-top: 1rem;
+    transition: all 0.5s ease-in-out;
+    background-size: 300% 100%;
+    box-shadow: 0 4px 15px 0 rgb(182 187 255);
+}
+.send-message:hover{
+    background-position: 100% 0;
+    background-image: linear-gradient(to left, #1a2356 , #5b7bfb);
+    transition: all 0.5s ease-in-out;
+}
+
+/*<<<<<<<<<<<<<<<<<<<<FOOTER-section-styling>>>>>>>>>>>>>>>>>>>*/
+.section-footer{
+    text-align: center;
+    padding: 40px 240px 80px;
+}
+.purple-line{
+    border: 4px solid #5a75f2;
+    border-radius: 8px;
+}
+.about-details{
+    margin-top: 4rem;
+    font-size: 18px;
+    font-weight: 600;
+}
 
 
 
@@ -425,6 +612,152 @@ a{
     .gamivo-logo {
         height: 40px;
         width: 180px;
+    }
+    /* counter section */
+    .counter__wrapper {
+        padding: 60px 16px;
+        flex-direction: column;
+    }
+    .game_dist {
+        padding: 20px 0px;
+        margin: 0px;
+    }
+    .counter {
+        font-size: 55px;
+    }
+    .counter__disc {
+        margin-top: 10px;
+        font-size: 22px;
+    }
+    /* offer section */
+    .offer__section {
+        padding: 60px 16px;
+        background-position: top -21rem right -20rem;
+        background-size: 33rem;
+    }
+    .section-title {
+        font-size: 40px;
+    }
+    .title-desc {
+        font-size: 20px;
+    }
+    .spec__wrapper {
+        flex-direction: column;
+    }
+    .spec__card {
+        padding: 20px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .spec-img {
+        height: 120px;
+        width: 120px;
+    }
+    .spec_feature {
+        font-size: 25px;
+    }
+    .spec_desc {
+        font-size: 18px;
+    }
+    .margin-center {
+        margin-top: 40px;
+        width: 14rem;
+    }
+    .purple-btn {
+        padding: 20px 10px;
+        font-size: 18px;
+    }
+    /* project section */
+    .project__section {
+        padding: 60px 16px;
+        background-position: top -20rem left -20rem;
+        background-size: 33rem;
+    }
+    .prev-project, .next-project {
+        height: 30px;
+        width: 20px;
+    }
+    .arrow-icon {
+        height: 30px;
+        width: 20px;
+    }
+    .project {
+        flex: 0 0 100%;
+        margin: 0px;
+    }
+    .project_card {
+        padding: 20px;
+        flex-direction: column;
+    }
+    .project-title {
+        font-size: 30px;
+    }
+    .project_det {
+        margin-top: 30px;
+        font-size: 17px;
+        line-height: 22px;
+    }
+    .project-dec {
+        width: 100%;
+    }
+    .game-img {
+        transform-style: preserve-3d;
+        height: 10rem;
+        width: 100%;
+    }
+
+    /* querry-section */
+    .querry-contact-section {
+        padding: 60px 16px;
+        flex-direction: column;
+    }
+    .contact-title {
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+    .contact-no, .email {
+        font-size: 20px;
+        line-height: 45px;
+    }
+    .links img {
+        height: 45px;
+        width: 46px;
+    }
+    .contact-img {
+        margin-top: 2rem;
+    }
+    .contact {
+        height: 17rem;
+        width: 100%;
+    }
+    .querry-section {
+        width: 100%;
+        margin-top: 40px;
+    }
+    .input-form {
+        width: 85%;
+        margin: 2rem auto;
+    }
+    #name, #subject, #email-add, #tellus {
+        width: 100%;
+        height: 45px;
+        margin-bottom: 25px;
+    }
+    #tellus {
+        height: 10rem;
+    }
+    .send-message {
+        font-size: 16px;
+        height: 3.3rem;
+        width: 10rem;
+    }
+    /* footer-section*/
+    .section-footer {
+        padding: 30px 16px;
+    }
+    .about-details {
+        margin-top: 2rem;
+        font-size: 14px;
     }
     
     

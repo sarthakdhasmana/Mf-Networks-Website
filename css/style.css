@@ -631,7 +631,7 @@ a{
     }
     /* offer section */
     .offer__section {
-        padding: 60px 16px;
+        padding: 20px 16px;
         background-position: top -21rem right -20rem;
         background-size: 33rem;
     }
@@ -643,6 +643,7 @@ a{
     }
     .spec__wrapper {
         flex-direction: column;
+        margin-top:0px;
     }
     .spec__card {
         padding: 20px;
@@ -669,7 +670,7 @@ a{
     }
     /* project section */
     .project__section {
-        padding: 60px 16px;
+        padding: 30px 16px;
         background-position: top -20rem left -20rem;
         background-size: 33rem;
     }
@@ -708,7 +709,7 @@ a{
 
     /* querry-section */
     .querry-contact-section {
-        padding: 60px 16px;
+        padding: 20px 16px;
         flex-direction: column;
     }
     .contact-title {
@@ -753,7 +754,7 @@ a{
     }
     /* footer-section*/
     .section-footer {
-        padding: 30px 16px;
+        padding: 20px 16px;
     }
     .about-details {
         margin-top: 2rem;
